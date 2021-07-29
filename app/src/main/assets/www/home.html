@@ -4,14 +4,10 @@
         <meta charset="utf-8">
         <meta
             http-equiv="Content-Security-Policy"
-            content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval';
-         style-src *;
-         script-src * data: blob: 'unsafe-inline' 'unsafe-eval'
-         media-src *;
-         font-src *;
-         connect-src *;
-         media-src *;
-         img-src 'self' data: content:; ">
+            content="default-src 'self' data:
+        gap: https://ssl.gstatic.com 'unsafe-eval'; style-src *; script-src * data:
+        blob: 'unsafe-inline' 'unsafe-eval' media-src *; font-src *; connect-src *;
+        media-src *; img-src 'self' data: content:; ">
         <!--'self' 'unsafe-inline'-->
 
         <meta name="format-detection" content="telephone=no">
@@ -26,66 +22,61 @@
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet">
 
-        <link type="text/css" rel="stylesheet" href="css/home.css">
+        <link type="text/css" rel="stylesheet" href="css/basic.css">
         <link type="text/css" rel="stylesheet" href="css/nav.css">
-        <!--<link rel="stylesheet" href="jquery.mobile/jquery.mobile-1.4.5.min.css"/>
-        <script type="text/javascript" charset="utf-8"
-        src="jquery.mobile/jquery-3.6.0.min.js"></script> <script type="text/javascript"
-        charset="utf-8" src="jquery.mobile/jquery.mobile-1.4.5.min.js"></script>-->
-        <!--<link rel="stylesheet"
-        href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> <script
-        src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
         <title>Hello World</title>
     </head>
-    <body>
-        <div class="container home_container">
-             <!--일간 위험도 그래프-->
-             <div id="home_dailyGraph">
-                dadilyGraph
+
+    <body >
+        <div class="container_with_nav home_container">
+            <!--일간 위험도 그래프-->
+            <div id="home_dailyGraph" class="homeDivSec">
+               <div class="textTemp">dadilyGraph</div> 
             </div>
 
             <!--인터넷 기사-->
-            <div id="home_article">
-                article
+            <div id="home_article" class="homeDivSec">
+                <div class="textTemp">article</div>
             </div>
 
             <!--주간 리포트-->
-            <div id="home_weeklyGraph">
-                weekly graph
-            </div>
-
-            <!--바텀 네비게이션 바-->
-            <div id="bottomNavigation">
-                <nav class="nav">
-                    <a href="home.html" class="nav__link">
-                        <span class="material-icons nav__icons">chalet</span>
-                        <span class="nav__text">홈</span>
-                    </a>
-
-                    <a href="sms.html" class="nav__link">
-                        <span class="material-icons nav__icons">sms</span>
-                        <span class="nav__text">문자열람</span>
-                    </a>
-
-                    <a href="graph.html" class="nav__link">
-                        <span class="material-icons nav__icons">show_chart</span>
-                        <span class="nav__text">상세분석</span>
-                    </a>
-
-                    <a href="tips.html" class="nav__link">
-                        <span class="material-icons nav__icons">tips_and_updates</span>
-                        <span class="nav__text">예방팁</span></a>
-
-                    <a href="menu.html" class="nav__link">
-                        <span class="material-icons nav__icons">menu</span>
-                        <span class="nav__text">메뉴</span>
-                    </a>
-                </nav>
+            <div id="home_weeklyGraph" class="homeDivSec">
+                <div class="textTemp">weekly graph</div>
             </div>
         </div>
+        <!--바텀 네비게이션 바-->
+        <nav class="nav">
+            <a href="home.html" class="nav__link">
+                <span class="material-icons nav__icons">chalet</span>
+                <span class="nav__text">홈</span>
+            </a>
 
+            <a href="sms.html" class="nav__link">
+                <span class="material-icons nav__icons">sms</span>
+                <span class="nav__text">문자열람</span>
+            </a>
+
+            <a href="graph.html" class="nav__link">
+                <span class="material-icons nav__icons">show_chart</span>
+                <span class="nav__text">상세분석</span>
+            </a>
+
+            <a href="tips.html" class="nav__link">
+                <span class="material-icons nav__icons">tips_and_updates</span>
+                <span class="nav__text">예방팁</span></a>
+
+            <a href="menu.html" class="nav__link">
+                <span class="material-icons nav__icons">menu</span>
+                <span class="nav__text">메뉴</span>
+            </a>
+        </nav>
         <!--<script src="cordova.js"></script>-->
+        <!-- unpkg -->
+        <script src="https://unpkg.com/@barba/core"></script>
         <script src="js/index.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+        <script src="js/animate.js"></script>
+
     </body>
 </html>
