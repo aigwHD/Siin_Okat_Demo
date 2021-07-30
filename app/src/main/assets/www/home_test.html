@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self' data:
+        gap: https://ssl.gstatic.com 'unsafe-eval'; style-src *; script-src * data:
+        blob: 'unsafe-inline' 'unsafe-eval' media-src *; font-src *; connect-src *;
+        media-src *; img-src 'self' data: content:; ">
+        <!--'self' 'unsafe-inline'-->
+
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta
+            name="viewport"
+            content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+
+        <!--<link rel="stylesheet" href="css/index.css">-->
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+
+        <!-- <link type="text/css" rel="stylesheet" href="css/basic.css"> -->
+        <link type="text/css" rel="stylesheet" href="css/nav.css">
+        <link type="text/css" rel="stylesheet" href="css/test.css">
+
+        <title>Hello World</title>
+    </head>
+
+    <body>
+        <div class="slides-container">
+
+            <div class="slide" id="slide-1">
+                <div class="container">
+
+                    <div id="home_1">
+                        <div id="home_title">
+                            <b>홈</b>
+                        </div>
+
+                        <div id="home_dailyGraph">
+                            <div id="inner_home_dailyGraph">
+                                <div id="upper_Graph">
+                                    <div id="today_comment">
+                                        Today
+                                    </div>
+
+                                    <div id="right_yatsu">
+                                        <div id="danger">
+                                            위험
+                                        </div>
+                                        <div id="safe">
+                                            안전
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="main_daily_graph">
+                                    <span>75%</span>
+                                </div>
+
+                                <div id="safe_comment">
+                                    안전점수
+                                </div>
+                                <div id="safe_score">
+                                    <b>25점</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="home_2">
+                        <div id="home_article">
+                            <div id="news_text">
+                                <b>뉴스</b>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="home_3">
+                        <div id="home_weeklyGraph">
+                            <div id="weekly_report_text">
+                                <b>주간 리포트</b>
+                            </div>
+
+                            <div id="main_weekly_graph">
+
+                                <div class="graph_bundle">
+                                    <div class="default_bar">
+                                        <span id="weekGraph1"></span>   
+                                    </div>
+
+                                    <div class="date"><b>7/23</b></div>
+                                </div>
+
+
+                                <div class="graph_bundle">
+                                    <div class="default_bar">
+                                        <span id="weekGraph2"></span>
+                                    </div>
+                                    
+                                    <div class="date"><b>7/24</b></div>
+                                </div>
+
+                                <div class="graph_bundle">
+                                    <div class="default_bar">
+                                        <span id="weekGraph3"></span>
+                                    </div>
+
+                                    <div class="date"><b>7/25</b></div>
+                                </div>
+                              
+                                <div class="graph_bundle">
+                                    <div class="default_bar">
+                                        <span id="weekGraph4"></span>
+                                    </div>
+
+                                    <div class="date"><b>7/26</b></div>
+                                </div>
+
+                                <div class="graph_bundle">
+                                    <div class="default_bar">
+                                        <span id="weekGraph5"></span>
+                                    </div>
+
+                                    <div class="date"><b>7/27</b></div>
+                                </div>
+                                
+                                <div class="graph_bundle">
+                                    <div class="default_bar">
+                                        <span id="weekGraph6"></span>
+                                    </div>
+
+                                    <div class="date"><b>7/28</b></div>
+                                </div>
+                               
+                                <div class="graph_bundle">
+                                    <div class="default_bar">
+                                        <span id="weekGraph7"></span>
+                                    </div>
+
+                                    <div class="date"><b>7/29</b></div>
+                                </div>
+                               
+                            </div>
+
+                           
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="slide" id="slide-2">
+                <div class="container">
+                    <div class="textTemp">search</div>
+                    <div class="textTemp">list</div>
+                </div>
+
+            </div>
+
+            <div id="slide-3" class="slide">
+                <div class="container">
+                    <div class="textTemp">circle graph</div>
+                    <div class="textTemp">list</div>
+                </div>
+
+            </div>
+
+            <div id="slide-4" class="slide">
+                <div class="container">
+                    <div class="container"></div>
+                    <div class="textTemp">filter</div>
+                    <div class="textTemp">list</div>
+                </div>
+
+            </div>
+
+            <div id="slide-5" class="slide">
+                <div class="container">
+                    <div class="textTemp">5555</div>
+                    <div class="textTemp">list</div>
+                </div>
+            </div>
+        </div>
+
+        <!--바텀 네비게이션 바-->
+        <nav class="nav">
+            <a href="#slide-1" class="nav__link">
+                <span class="material-icons nav__icons">chalet</span>
+                <span class="nav__text">홈</span>
+            </a>
+
+            <a href="#slide-2" class="nav__link">
+                <span class="material-icons nav__icons">sms</span>
+                <span class="nav__text">문자열람</span>
+            </a>
+
+            <a href="#slide-3" class="nav__link">
+                <span class="material-icons nav__icons">show_chart</span>
+                <span class="nav__text">상세분석</span>
+            </a>
+
+            <a href="#slide-4" class="nav__link">
+                <span class="material-icons nav__icons">tips_and_updates</span>
+                <span class="nav__text">예방팁</span></a>
+
+            <a href="#slide-5" class="nav__link">
+                <span class="material-icons nav__icons">menu</span>
+                <span class="nav__text">메뉴</span></a>
+        </nav>
+        <!--<script src="cordova.js"></script>-->
+        <!-- unpkg -->
+        <script src="https://unpkg.com/@barba/core"></script>
+        <script src="js/index.js"></script>
+
+        <!--<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>-->
+        <script src="js/animate.js"></script>
+
+        <!--Tweenlite-->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.6/TweenLite.min.js"></script>
+
+        <!--Jquery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+        <!--Plugins-->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.6/plugins/CSSPlugin.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.6/plugins/ScrollToPlugin.min.js"></script>
+
+        <script src="js/test.js"></script>
+    </body>
+</html>
